@@ -1,7 +1,8 @@
 % Generate Doppler Spectrum
 [doppler_spectrum, freq_bin] = get_doppler_spectrum([dpth_ges, spfx_ges],...
                     rx_cnt, rx_acnt, 'stft');
-                
+%从指定路径（dpth_ges + spfx_ges）读取雷达原始 IQ 数据，通过STFT（短时傅里叶变换） 计算出多普勒频谱和对应的频率仓。
+
 % Doppler To Velocity Mapping [Nonlinear Programming]
 % Target: doppler_spectrum_seg: 2*F*N; doppler_spectrum_seg: 2*F
 %        F:frequency bin number; N: segment length
