@@ -246,7 +246,7 @@ else:
         shuffle=True,
     )
     print("Saving trained model...")
-    model.save("model_widar3_trained.h5")
+    model.save("model_widar3_trained.keras")
 
 # Testing...
 print("Testing...")
@@ -263,6 +263,3 @@ print(cm)
 # Accuracy
 test_accuracy = np.sum(label_test == label_test_pred) / (label_test.shape[0])
 print(test_accuracy)
-
-
-
